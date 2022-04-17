@@ -1,0 +1,104 @@
+<html>
+   <head>
+      <title>
+          document
+      </title>
+      <script>
+          function add()
+          {
+            var num1,num2,num3;
+            num1=Number(document.cal1.t1.value);
+            num2=Number(document.cal1.t2.value);
+            num3=num1+num2;
+            document.cal1.t3.value=num3;
+          }
+          function sub()
+          {
+            var num1,num2,num3;
+            num1=Number(document.cal1.t1.value);
+            num2=Number(document.cal1.t2.value);
+            num3=num1-num2;
+            document.cal1.t3.value=num3;
+          }
+          function rem()
+          {
+            var num1,num2,num3;
+            num1=Number(document.cal1.t1.value);
+            num2=Number(document.cal1.t2.value);
+            num3=num1%num2;
+            document.cal1.t3.value=num3;
+          }
+          function mul()
+          {
+            var num1,num2,num3;
+            num1=Number(document.cal1.t1.value);
+            num2=Number(document.cal1.t2.value);
+            num3=num1*num2;
+            document.cal1.t3.value=num3;
+          }
+          function div()
+          {
+            var num1,num2,num3;
+            num1=Number(document.cal1.t1.value);
+            num2=Number(document.cal1.t2.value);
+            num3=num1/num2;
+            document.cal1.t3.value=num3;
+          }
+          function power()
+          {
+            var num1,num2,num3;
+            num1=Number(document.cal1.t1.value);
+            num2=Number(document.cal1.t2.value);
+            num3=num1**num2;
+            document.cal1.t3.value=num3;
+          }
+          function sine()
+          {
+            var num1,num2,num3,num4;
+            num1=Number(document.cal1.t1.value);
+            num2=Number(document.cal1.t2.value);
+            num3=Math.sin(num1);
+            num4=Math.sin(num2);
+            document.cal1.t3.value=num3;
+            document.cal1.t3.value=num4; 
+          }  
+          function cosine()
+          {
+            var num1,num2,num3,num4;
+            num1=Number(document.cal1.t1.value);
+            num2=Number(document.cal1.t2.value);
+            num3=Math.cos(num1);
+            num4=Math.cos(num2);
+            document.cal1.t3.value=num3;
+            document.cal1.t3.value=num4; 
+          }  
+          function pivalue()
+          {
+            var num1,num2,num3,num4;
+            num1=Number(document.cal1.t1.value);
+            num2=Number(document.cal1.t2.value);
+            num3=num1*(Math.PI);
+            //num4=num2*(Math.PI);
+            document.cal1.t3.value=num3;
+            //document.cal1.t3.value=num4; 
+          }  
+      </script>
+   </head> 
+   <body>
+      <h3>Calculator</h3>
+      <form name="cal1">
+         <p> Enter a number 1 :<input type="text" name="t1"></p>
+         <p> Enter number 2 :<input type="text" name="t2"></p>
+         <p> Result :<input type="text" name="t3" ><br><br>
+             <input type="button" value="+" onclick="add()"> 
+             <input type="button" value="-" onclick="sub()"> 
+             <input type="button" value="*" onclick="mul()"> 
+             <input type="button" value="/" onclick="div()"> 
+             <input type="button" value="%" onclick="rem()"> 
+             <input type="button" value="^" onclick="power()">
+             <input type="button" value="sin(x)" onclick="sine()">
+             <input type="button" value="cos(x)" onclick="sine()">
+             <input type="button" value="pi" onclick="pivalue()">
+         </p>
+   </body>
+</html>
