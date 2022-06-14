@@ -1,0 +1,66 @@
+<html>
+   <head>
+       <script>
+           function calc()
+           {
+               var a,b,c;
+               a=Number(document.BMI.t1.value);
+               b=Number(document.BMI.t2.value);
+               c=b/(a*a);
+               document.BMI.t3.value=c;
+            }
+        </script>
+    </head>
+    <style>
+        div
+        {
+            background-color:#c2c0c3;
+            margin:100px 100px 100px 450px;
+            height:500px;
+            width:400px;
+        }
+        #d1
+        {
+           padding-left:30px;
+        }
+        #d2
+        {
+           padding-left:30px;
+        }
+        #d3
+       {
+           padding-left:150px;
+        }
+        #d4
+        {
+         padding-left:180px;
+        }
+        #d5
+        { 
+           padding-left:125px;
+        }
+        #d6  
+        {
+           padding-left:125px;
+        }
+        #d7
+        {
+           padding-left:125px;
+        }
+    </style>
+    <body>
+       <form name="BMI">
+       <div>
+           <center><h1>BMI calculator</h1></center>
+           <p id="d1">HEIGHT IN CM:<input type="text" name="t1"></p><br><br>
+           <p id="d2">WEIGHT IN KG:<input type="text" name="t2"></p><br><br>
+           <p id="d3"><input type="text" name="t3"></p>
+           <p id="d4"><input type="button" value="calculate" onclick="calc()"></p>
+           <center><h3>BMI Weight Guide</h3></center>
+           <p id="d5">Under Weight=Less than 18.6</p>
+           <p id="d6">Normal Range= 15.5 and 24.9</p>
+           <p id="d7">Overweight=Greater than 24.9</p>
+        </div>
+        </form>
+    </body>
+</html>
